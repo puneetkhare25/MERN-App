@@ -20,9 +20,9 @@ connectDB();
 // app.use("/api/food", foodRouter);
 // app.use("/images", express.static('uploads'));
 
-/* app.get("/", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
     res.send("Hello, World!");
-}); */
+});
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
