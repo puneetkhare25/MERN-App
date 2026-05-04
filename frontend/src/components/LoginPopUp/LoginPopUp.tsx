@@ -34,6 +34,7 @@ export default function LoginPopUp({ url, setShowLogin, setToken }: LoginPopUpPr
         try {
             const response = await axios.post(`${url}${endpoint}`, payload);
 
+            //* Token 
             if (response.data.success) {
                 localStorage.setItem("token", response.data.token);
                 setToken(response.data.token);
