@@ -3,10 +3,11 @@
     "target": "ES2020",
     "module": "CommonJS",
 
-    "rootDir": "./src",
+    "rootDir": ".",
     "outDir": "./dist",
 
     "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
     "types": ["node"],
 
     "strict": true,
@@ -23,6 +24,6 @@
     "moduleDetection": "force"
   },
 
-  "include": ["src"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

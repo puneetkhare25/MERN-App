@@ -1,5 +1,7 @@
 #* Dependencies
 node_modules/
+.pnp/
+.pnp.js
 
 #* Environment variables (secrets)
 .env
@@ -9,6 +11,7 @@ node_modules/
 #* Build output
 dist/
 build/
+out/
 
 #* Logs
 logs/
@@ -16,9 +19,20 @@ logs/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 #* TypeScript cache
 *.tsbuildinfo
+
+#* Runtime uploads and generated files
+uploads/*
+!uploads/.gitkeep
+
+#* Caches
+.cache/
+.eslintcache
+.turbo/
 
 #* OS files
 .DS_Store
@@ -34,5 +48,9 @@ temp/
 
 #* Test coverage (if you add testing later)
 coverage/
+.nyc_output/
 
-uploads/
+#* Local certificates / keys
+*.pem
+*.key
+*.crt
