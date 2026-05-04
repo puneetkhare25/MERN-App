@@ -3,7 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Products from "./components/Products/Products";
 import LoginPopUp from "./components/LoginPopUp/LoginPopUp";
 
-const url = "http://localhost:3000";
+const url = "http://localhost:5173";
 
 export default function App() {
   const [showLogin, setShowLogin] = useState(false);
